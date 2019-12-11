@@ -1,0 +1,34 @@
+
+.bg-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(102, 61, 151, 0.7), rgba(167, 109, 173, 0.7)), url("../img/bg-new.jpg");
+  background-size: cover;
+  z-index: -100;
+}
+
+.position:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 78rem;
+  height: 41rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 1rem;
+  left: -1.5rem;
+  z-index: -80;
+}
+
+.position:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 81rem;
+  height: 39rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 2rem;
+  left: -3rem;
+  z-index: -90;
+}

@@ -1,0 +1,279 @@
+@import "decor";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+  body {
+    font-size: 1.2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 748px;
+        margin: auto;
+        padding-top: 48px;
+        margin-bottom: 87px;
+
+        .logo {
+          width: 4rem;
+          height: 1.4rem;
+          margin-top: -4rem;
+
+          img {
+            width: 4rem;
+          }
+        }
+
+        nav {
+          ul {
+            list-style-type: none;
+            display: flex;
+
+            li {
+              margin-right: 4.5rem;
+              padding-bottom: 0.5rem;
+
+              a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                padding-bottom: 0.5rem;
+
+                &:hover {
+                  border-bottom: 1px grey solid;
+                }
+
+                &:focus, &:active {
+                  border-bottom: 1px white solid;
+                }
+              }
+
+              &:nth-child(2) {
+                border-bottom: 1px white solid;
+              }
+            }
+          }
+        }
+
+        .menu {
+          width: 2.3rem;
+          margin-top: -1rem;
+
+          .sandwich {
+            width: 2.3rem;
+          }
+        }
+      }
+
+      .position {
+        width: 75rem;
+        height: 43rem;
+        background-color: white;
+        margin: auto;
+        position: relative;
+
+        &-images {
+          display: inline-block;
+          position: relative;
+          width: 50rem;
+          height: 43rem;
+          background-color: #ECE9EB;
+          overflow: hidden;
+
+          .huarache {
+            position: absolute;
+            width: 44rem;
+            top: 8rem;
+            left: 4rem;
+          }
+
+          .dots {
+            position: absolute;
+            width: 47rem;
+            top: 6rem;
+            left: 3rem;
+          }
+
+          .sneakers {
+            position: absolute;
+            width: 47rem;
+            top: 4rem;
+            left: 2rem;
+          }
+
+          .add {
+            position: absolute;
+            width: 2.2rem;
+            height: 2.2rem;
+            bottom: 8rem;
+            right: 2rem;
+          }
+
+          .flex-mini {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            .mini {
+              border: 2px white solid;
+              width: 4.3rem;
+              height: 4.3rem;
+              margin-bottom: 2.5rem;
+              margin: 1rem;
+            }
+          }
+        }
+
+        &-description {
+          position: absolute;
+          display: inline-block;
+          width: 25rem;
+          height: 43rem;
+          padding-left: 3rem;
+
+          .close {
+            width: 1.6rem;
+            height: 1.6rem;
+            text-align: right;
+            margin-right: 1.2rem;
+            margin-left: auto;
+            margin-top: 0.9rem;
+
+            img {
+              width: 1.6rem;
+              height: 1.6rem;
+            }
+          }
+
+          .new {
+            margin-top: 1.75rem;
+
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 1.4rem;
+              letter-spacing: 0.05rem;
+              color: white;
+              background-color: #FFA60D;
+              padding: 0.4rem 0.8rem;
+            }
+          }
+
+          .statement {
+            padding-right: 3rem;
+            margin-bottom: 1.3rem;
+            line-height: 3rem;
+
+            h1 {
+              text-transform: uppercase;
+              font-weight: normal;
+              font-size: 2.4rem;
+              letter-spacing: 0.05rem;
+
+              span {
+                color: #5E4FFF;
+              }
+            }
+          }
+
+          .model-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.3rem;
+
+            span {
+              margin-right: 2rem;
+              font-size: 1.4rem;
+            }
+
+            .rating {
+
+              margin-top: 0.3rem;
+
+              i {
+                font-size: 1.5rem;
+                margin: -0.1rem;
+              }
+            }
+          }
+
+          .price {
+            font-size: 2.2rem;
+            font-weight: lighter;
+            margin-bottom: 1.5rem;
+          }
+
+          .size {
+            font-size: 1.4rem;
+          }
+
+          .size-choose {
+            margin-left: -4rem;
+            margin-right: 3rem;
+            margin-top: -0.1rem;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+              text-decoration: none;
+              color: black;
+
+              li {
+                font-size: 1.5rem;
+                padding: 0.7rem 0.7rem 0.5rem 0.6rem;
+              }
+
+              &:hover {
+                border: 1px grey solid;
+              }
+
+              &:active, &:focus {
+                border: 1px black solid;
+              }
+            }
+          }
+
+          button {
+            display: block;
+            width: 119px;
+            height: 31px;
+            margin-bottom: 0.8rem;
+            padding-top: 0.5rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+          }
+
+          .add-cart {
+            color: white;
+            border: 0;
+            background-color: #A200B8;
+
+            &:hover, &:active, &:focus {
+              background-color: #ae61b8;
+            }
+          }
+
+          .wishlist {
+            background-color: white;
+            border: 1px black solid;
+
+            &:hover, &:active, &:focus {
+              background-color: #e2c3e6;
+            }
+          }
+        }
+      }
+    }
+  }
